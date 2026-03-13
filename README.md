@@ -121,6 +121,7 @@ pip install -r requirements.txt
 
 ```bash
 python manage.py makemigrations
+python manage.py makemigrations books
 python manage.py migrate
 ```
 
