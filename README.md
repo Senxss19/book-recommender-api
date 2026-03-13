@@ -144,7 +144,7 @@ Detailed API documentation is provided as a **PDF document**.
 
 📄 **Download API Documentation**
 
-https://github.com/Senxss19/book-recommender-api/API.pdf
+https://github.com/Senxss19/book-recommender-api/blob/main/API.pdf
 
 The API documentation includes:
 
