@@ -10,7 +10,7 @@ from books.services.recommendation import recommend_books
 from books.services.analytics import publisher_stats
 
 from books.pagination import StandardPagination
-from books.utils.response import success
+from books.utils.response import success, error
 
 from drf_spectacular.utils import extend_schema, OpenApiParameter
 from drf_spectacular.types import OpenApiTypes
@@ -84,7 +84,7 @@ def recommend(request):
     keyword = request.GET.get("q")
 
     if not keyword or len(keyword) < 3:
-        return success([], message="keyword must be at least 3 characters")
+        return error(message="keyword must be at least 3 characters")
 
     books = recommend_books(keyword)
 
