@@ -77,25 +77,35 @@ cd book-recommender-api
 
 ---
 
-## 2 Create virtual environment
+## 2 Environment Requirement Check
+
+Before running the project, make sure your environment meets the following requirement.
+
+### Python Version
+
+This project requires **Python 3.10 or higher**.
+
+Check your Python version:
 
 ```bash
-python -m venv .venv
+python --version
 ```
 
-Activate environment
-
-**Windows**
+or
 
 ```bash
-.venv\Scripts\activate
+python3 --version
 ```
 
-**Mac/Linux**
+Expected output example:
 
 ```bash
-source .venv/bin/activate
+Python 3.10.x
 ```
+
+If your version is lower than **3.10**, please install a newer Python version from:
+
+https://www.python.org/downloads/
 
 ---
 
